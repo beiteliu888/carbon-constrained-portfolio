@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carbon-constrained-portfolio"
+version = "0.1.0"
+description = "An exploratory, learning-oriented carbon-constrained portfolio optimization prototype"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "scipy>=1.13",
+  "PyYAML>=6.0",
+  "yfinance>=0.2.40",
+  "matplotlib>=3.9",
+  "seaborn>=0.13",
+]
+
+[project.optional-dependencies]
+dev = ["jupyter>=1.0", "pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:capture"
+pythonpath = ["src"]

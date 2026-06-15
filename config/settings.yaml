@@ -1,0 +1,32 @@
+project:
+  name: "Carbon-Constrained Portfolio Optimization Prototype"
+  seed: 42
+
+data:
+  # 教学用固定股票池，会产生 selection bias 和 survivorship bias。
+  # 为获得连续、可核验的公开 Scope 1 和 location-based Scope 2 披露，
+  # 用 WMT、V、COP 替换原示例中披露覆盖不足的 AMZN、META、XOM。
+  tickers: [AAPL, MSFT, WMT, GOOGL, V, NVDA, JPM, COP, JNJ, PG]
+  start_date: "2018-01-01"
+  end_date: "2025-12-31"
+  price_field: "Adj Close"
+  cache_path: "data/raw/adjusted_close.csv"
+  simulated_cache_path: "data/raw/SIMULATED_adjusted_close.csv"
+  allow_simulated_fallback: true
+
+optimization:
+  annualization_factor: 252
+  risk_aversion: 5.0
+  max_weight: 0.25
+  covariance_ridge: 0.000001
+  carbon_budget_ratio: 0.70
+
+backtest:
+  lookback_days: 252
+  rebalance_frequency: "M"
+  transaction_cost_bps: 0.0
+  risk_free_rate: 0.0
+
+sensitivity:
+  carbon_budget_ratios: [0.60, 0.70, 0.80, 1.00]
+  risk_aversion_values: [2.5, 5.0, 10.0]
