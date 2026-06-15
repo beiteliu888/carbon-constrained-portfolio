@@ -232,7 +232,7 @@ outputs/      可选的图表与表格输出
 5. 加入 transaction cost、slippage、流动性和 benchmark tracking constraints。
 6. 使用 point-in-time universe 和退市股票降低 survivorship bias。
 
-## 可向 Senior Quant 使用的简短说明
+## 项目定位总结
 
 这是一个教学型组合构建 prototype，用于隔离 carbon constraint 对 mean-variance
 权重和历史风险指标的影响。价格来自公开历史市场数据；carbon intensity 使用 CDU/CDP
