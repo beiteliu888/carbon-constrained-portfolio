@@ -11,10 +11,10 @@ alpha、实际减排效果或 downside resilience 的证据。
 
 - Developer 正式项目编号：`001`
 - 当前路径：`/Users/max/Developer/10_active/001_carbon-constrained-portfolio`
-- 状态：`active`
-- 当前阶段：v1 prototype 已可运行，已生成报告、学习笔记、networking talking points 和回测输出。
+- 状态：`completed`
+- 当前阶段：v1 prototype 已可运行并已收尾，已生成报告、学习笔记、networking talking points 和回测输出。
 - 本项目已接入 Developer 新工作流：项目级 `AGENTS.md`、`prompts/`、`notes/` 和 `docs/change_requests/` 已补齐。
-- 当前 Git 注意事项：`NETWORKING_TALKING_POINTS.md` 是已存在的未跟踪文件，不要误删。
+- 当前 Git 状态：workflow 档案和 networking talking points 已纳入项目仓库并推送到 GitHub。
 
 本次 workflow 接入只整理项目档案，不代表研究逻辑、代码或回测结果发生变化。
 
@@ -267,7 +267,7 @@ outputs/      可选的图表与表格输出
 
 ## 下一步建议
 
-若继续推进 v2，建议先不要直接重跑或覆盖 v1 输出，而是先写 Change Request。最值得优先讨论的方向是：
+本项目当前停留在 v1，不继续新增功能。若未来重新启动 v2，建议先不要直接重跑或覆盖 v1 输出，而是先写 Change Request。最值得优先讨论的方向是：
 
 1. 加入 transaction costs，并观察 turnover 对结果解释的影响。
 2. 增加 sector exposure diagnostics，判断 carbon constraint 是否主要通过行业倾斜发挥作用。

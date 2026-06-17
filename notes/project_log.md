@@ -27,3 +27,22 @@
   - 当前 v1 不继续新增研究功能。
   - 后续如需重启研究，应先写 Change Request，而不是直接覆盖当前输出。
 - 下一步：提交并推送 workflow migration、prompt 补档和 networking talking points。
+
+## 2026-06-17 - 项目收尾复盘
+
+- 进展：项目 001 已完成当前阶段收尾；本地提交已推送至 GitHub，项目状态在 Developer 索引中标记为 `completed`。
+- 项目结果：
+  - v1 prototype 保留为 learning-oriented / exploratory portfolio construction project。
+  - 研究代码、数据和 outputs 未在 workflow migration 中被修改或覆盖。
+  - `NETWORKING_TALKING_POINTS.md`、完整 prompt 链路、项目级 `AGENTS.md`、change request 模板和日志均已纳入项目。
+- 可复刻做法：
+  - 历史项目补档时明确写“根据现有项目文档反推”。
+  - 停止开发时先确认项目状态，再更新 README、项目索引和日志。
+  - 对量化项目保留谨慎表述：prototype、not alpha、not production strategy。
+- 踩坑与修正：
+  - 本机缺少 `gh` 和 `brew`，GitHub HTTPS push 初次认证被挡住。
+  - 通过 GitHub Personal Access Token 完成认证后，项目成功推送。
+- 用户偏好：
+  - 达到学习目标后，项目可以明确停在当前版本，不强行扩展功能。
+  - 收尾复盘要短、清楚、可复用，不写流水账。
+- 下一步：无立即开发任务；未来若重启 v2，先写 Change Request。
